@@ -13,7 +13,7 @@ for (let i = 0; i < 10; i++) {
     axios.get(endpoint)
     .then(response => {
        let emailGet = response.data.response;
-       ulPage.innerHTML += `<li>${emailGet}</li>`
+       ulPage.innerHTML += `<li class="list-group-item list-group-item-primary fw-semibold" >${emailGet}</li>`
        })
     
     
@@ -32,7 +32,7 @@ myButton.addEventListener("click", () => {
     .then(response => {
        let emailGet = response.data.response;
        
-       ulPage.innerHTML += `<li>${emailGet}</li>`
+       ulPage.innerHTML += `<li class="list-group-item list-group-item-primary fw-semibold">${emailGet}</li>`
        })
     .catch(error =>{
         console.error(error);
